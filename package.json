@@ -37,6 +37,12 @@
       "jest"
     ]
   },
+  "probot": {
+   "apps": [
+     "probot-labeler",
+     "probot-stale"
+   ]
+  },
   "jest": {
     "testEnvironment": "node"
   },
