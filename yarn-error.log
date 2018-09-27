@@ -1,0 +1,84 @@
+Arguments: 
+  /usr/local/Cellar/node/10.11.0/bin/node /usr/local/Cellar/yarn/1.9.4/libexec/bin/yarn.js add probot-autolabeler
+
+PATH: 
+  /Users/rafaelfranca/.yarn/bin:/opt/dev/bin/user:/Users/rafaelfranca/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/opt/X11/bin
+
+Yarn version: 
+  1.9.4
+
+Node version: 
+  10.11.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/probot-autolabeler: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.9.4/libexec/lib/cli.js:64202:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.9.4/libexec/lib/cli.js:137468:22)
+      at Request.emit (events.js:182:13)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.9.4/libexec/lib/cli.js:138440:10)
+      at Request.emit (events.js:182:13)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.9.4/libexec/lib/cli.js:138362:12)
+      at Object.onceWrapper (events.js:273:13)
+      at IncomingMessage.emit (events.js:187:15)
+      at endReadableNT (_stream_readable.js:1092:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  {
+    "name": "rails-bot",
+    "version": "1.0.0",
+    "description": "Bot for the Rails organization",
+    "author": "Rafael Mendonça França <rafaelmfranca@gmail.com>",
+    "license": "MIT",
+    "repository": "https://github.com/rails/rails-probot.git",
+    "homepage": "https://github.com/rails/rails-probot",
+    "bugs": "https://github.com/rails/rails-probot/issues",
+    "keywords": [
+      "probot",
+      "github",
+      "probot-app"
+    ],
+    "scripts": {
+      "dev": "nodemon",
+      "start": "probot run",
+      "lint": "standard --fix",
+      "test": "jest && standard",
+      "test:watch": "jest --watch --notify --notifyMode=change --coverage"
+    },
+    "dependencies": {
+      "probot": "^7.2.0"
+    },
+    "devDependencies": {
+      "jest": "^22.4.3",
+      "nodemon": "^1.17.2",
+      "smee-client": "^1.0.2",
+      "standard": "^10.0.3"
+    },
+    "engines": {
+      "node": ">= 8.3.0"
+    },
+    "standard": {
+      "env": [
+        "jest"
+      ]
+    },
+    "jest": {
+      "testEnvironment": "node"
+    },
+    "nodemonConfig": {
+      "exec": "npm start",
+      "watch": [
+        ".env",
+        "."
+      ]
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

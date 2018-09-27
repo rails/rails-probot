@@ -1,0 +1,50 @@
+{
+  "name": "rails-bot",
+  "version": "1.0.0",
+  "description": "Bot for the Rails organization",
+  "author": "Rafael Mendonça França <rafaelmfranca@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/rails/rails-probot.git",
+  "homepage": "https://github.com/rails/rails-probot",
+  "bugs": "https://github.com/rails/rails-probot/issues",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "dev": "nodemon",
+    "start": "probot run",
+    "lint": "standard --fix",
+    "test": "jest && standard",
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage"
+  },
+  "dependencies": {
+    "probot-labeler": "https://github.com/probot/autolabeler.git",
+    "probot-stale": "https://github.com/probot/stale.git"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3",
+    "nodemon": "^1.17.2",
+    "smee-client": "^1.0.2",
+    "standard": "^10.0.3"
+  },
+  "engines": {
+    "node": "8.9.4"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "nodemonConfig": {
+    "exec": "npm start",
+    "watch": [
+      ".env",
+      "."
+    ]
+  }
+}
