@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "probot-labeler": "https://github.com/probot/autolabeler.git",
+    "probot-no-response": "https://github.com/probot/no-response",
     "probot-stale": "https://github.com/probot/stale.git"
   },
   "devDependencies": {
@@ -38,10 +39,11 @@
     ]
   },
   "probot": {
-   "apps": [
-     "probot-labeler",
-     "probot-stale"
-   ]
+    "apps": [
+      "probot-labeler",
+      "probot-stale",
+      "no-response"
+    ]
   },
   "jest": {
     "testEnvironment": "node"
