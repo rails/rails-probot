@@ -42,7 +42,7 @@
     "apps": [
       "probot-labeler",
       "probot-stale",
-      "no-response"
+      "probot-no-response"
     ]
   },
   "jest": {
