@@ -22,8 +22,7 @@
   "dependencies": {
     "probot-labeler": "https://github.com/probot/autolabeler.git",
     "probot-no-response": "https://github.com/probot/no-response",
-    "probot-stale": "https://github.com/probot/stale.git",
-    "verba-sequentur": "https://github.com/jonathanhefner/verba-sequentur.git"
+    "probot-stale": "https://github.com/probot/stale.git"
   },
   "devDependencies": {
     "jest": "^22.4.3",
@@ -43,8 +42,7 @@
     "apps": [
       "probot-labeler",
       "probot-stale",
-      "probot-no-response",
-      "verba-sequentur"
+      "probot-no-response"
     ]
   },
   "jest": {
